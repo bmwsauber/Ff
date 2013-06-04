@@ -1,5 +1,5 @@
 <?php
-class Location_controllers_IndexController
+class Location_controllers_IndexController extends lib_controllers_Abstract
 {
     public function initAction()
     {
@@ -27,6 +27,15 @@ class Location_controllers_IndexController
         
         /************************************************/
 
+
+        //~ $layout = $this->renderLayout();
+        //~ 
+        //~ pri($layout);
+
+
+
+
+        
 
     }
 

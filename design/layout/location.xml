@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <location_index_init translate="label">
+        <reference name="root">
+            <action method="setTemplate"><template>1column.phtml</template></action>
+        </reference>
+
+        <reference name="content">
+            <block type="sales/order_history" name="sales.order.history">
+                <block type="core/text_list" name="sales.order.history.info" as="info" translate="label">
+                    <label>Order History Info</label>
+                </block>
+            </block>
+            <block type="customer/account_dashboard" name="customer.account.link.back" template="customer/account/link/back.phtml"/>
+        </reference>
+    </location_index_init>
+
+</layout>

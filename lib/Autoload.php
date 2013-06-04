@@ -19,10 +19,20 @@ class Lib_Autoload
     public function autoload($class)
     {
        
-        $classFile = str_replace(' ', DIRECTORY_SEPARATOR, ucwords(str_replace('_', ' ', $class)));
+        $classFile = str_replace(' ', DS, ucwords(str_replace('_', ' ', $class)));
         $classFile.= '.php';
         
-        return include $classFile;
+        if(file_exists($classFile) )
+        {
+            return include $classFile;
+        }
+        else
+        {  
+            echo file_get_contents(PATH_ROOT.DS.'errors'.DS.'404.phtml');
+            exit;
+        }
+
+        
     }
 }
 

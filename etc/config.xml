@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config>
+	<default>
+        <db>
+            <db_host>localhost</db_host>
+            <db_user>root</db_user>
+            <db_pass></db_pass>
+            <db_name>fish.loc</db_name>
+        </db>
+	</default>
+</config>

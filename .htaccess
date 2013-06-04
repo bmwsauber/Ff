@@ -1,0 +1,12 @@
+RewriteEngine on
+
+RewriteRule ^([A-Za-z0-9-]+)/([^/]+)/([^/]+)/(.*)$ index.php?module=$1&controller=$2&action=$3&params=$4 [L] 
+RewriteRule ^([A-Za-z0-9-]+)/([^/]+)/?(.*)$ index.php?module=$1&controller=$2&action=index [L] 
+RewriteRule ^([A-Za-z0-9-]+)/?$ index.php?module=$1&controller=index&action=index [L] 
+
+
+
+
+
+
+

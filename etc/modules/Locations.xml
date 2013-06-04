@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config>
+	<location>
+        <models>
+            <resource_model>
+                <calss>Location_Model_Resourse_Location</calss>
+                <table>locations</table>
+            </resource_model>
+		</models>
+	</location>
+</config>
